@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var abc_1 = require("./abc");
+var xyz_1 = require("./xyz");
+abc_1.display1();
+xyz_1.display2();
+var emp1 = new abc_1.Employee();
+emp1.dis();
+var cc = new abc_1.Customer();
+cc.dis();
+abc_1.dis();
+xyz_1.dis();
+var cc1 = new xyz_1.Customer();
+cc1.dis();
