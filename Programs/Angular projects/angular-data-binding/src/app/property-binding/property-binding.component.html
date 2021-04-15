@@ -1,0 +1,10 @@
+<div>
+    <h2>Property binding - one way data binding</h2>
+    Name is <input type="text" [value]="fname"/>    <br/>
+    Desg is <span [innerText]="desg"></span><br/>
+    Desg is {{desg}}
+    <br/>
+    <input type="button" value="click here" disabled/><br/>
+    <input type="button" value="string interpolation" disabled={{f1}}/><br/>
+    <input type="button" value="property binding" [disabled]="f2"/><br/>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <h2>Event binding - One way </h2>
+    <input type="button" value="click here" (click)="fun1()"/><br/>
+    Age is {{age}}<br/>
+    Age is <span [innerText]="age"></span><br/>
+    <input type="text" [value]="age"/><br/>
+    <div [hidden]="f1">Welcome to Hidden attribute using property binding</div>
+    <br/>
+    <h3>Template Reference</h3>
+    Name :<input type="text" #nameRef/><br/>
+    <input type="button" value="pass value" (click)="displayName(nameRef.value)"/>
+    <br/>
+    Welcome user {{name}}
+</div>
