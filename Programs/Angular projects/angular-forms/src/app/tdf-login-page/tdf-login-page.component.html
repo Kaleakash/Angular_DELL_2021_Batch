@@ -15,13 +15,19 @@
         <input type="password" name="pass" ngModel required pattern="\d{3}" #passRef="ngModel"/>
         <div *ngIf="passRef.errors && (passRef.dirty || passRef.touched)">
             <span [hidden]="!passRef.errors.required" style="color:red;">
-                        Password is required
+                    Password is required
             </span>
             <span [hidden]="!passRef.errors.pattern" style="color:red">
                     It must contains 3 digits 
             </span>
     </div>
         <br/>
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" ngModel>Male
+        <input type="radio" name ="gender" value="female" ngModel>Female
+        
+        <br/>
+        File upload :<input type="file" name="fileData" ngModel/><br/>
         <input type="submit" value="submit" [disabled]="loginRef.invalid"/>
         <input type="reset" value="reset"/>
     </form>
