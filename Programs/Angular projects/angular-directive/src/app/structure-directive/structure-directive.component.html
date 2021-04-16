@@ -1,0 +1,44 @@
+<div>
+    <h2>Structure Directive</h2>
+    <input type="button" [value]="b1" (click)="fun()"><br/>
+    <div *ngIf="f1">
+        This is simple div tag info
+    </div>
+    <hr/>
+    Name is {{name}}<br/>
+    <h4>All Student Names are </h4>
+    <ul>
+        <li *ngFor="let ss of stdNames">{{ss}}</li>
+    </ul>
+    <br/>
+    Product Name :<input type="text" #pName/><br/>
+    <input type="button" value="Add Product" (click)="addProduct(pName.value)"/>
+    <br/>
+    All Product Namre are <br/>
+    <ol>
+        <li *ngFor="let pname of productNames">{{pname}}</li>
+    </ol>
+    <br/>
+    <input type="button" value="Add Data" (click)="addData()"/><br/>
+    <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Age</th>
+            </tr>
+            <tr *ngFor="let emp of employees">
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.salary}}</td>
+                    <td>{{emp.age}}</td>
+            </tr>
+    </table>
+    <br/>
+    Employee Details is <br/>
+    Id is {{employee.id}}, Name is {{employee.name}}, Salary {{employee.salary}}
+</div>
+
+
+
+
