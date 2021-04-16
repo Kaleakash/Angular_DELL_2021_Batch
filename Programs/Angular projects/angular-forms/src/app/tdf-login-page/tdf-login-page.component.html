@@ -1,0 +1,29 @@
+<div>
+    <form #loginRef="ngForm" (ngSubmit)="checkUser(loginRef)">
+        <label>UserName</label>
+        <input type="text" name="user" ngModel required minlength="2" #userRef="ngModel"/>
+        <div *ngIf="userRef.errors && (userRef.dirty || userRef.touched)">
+                <span [hidden]="!userRef.errors.required" style="color:red;">
+                            UserName is required
+                </span>
+                <span [hidden]="!userRef.errors.minlength" style="color:red">
+                        UserName must contains min 2 char
+                </span>
+        </div>
+        <br/>
+        <label>Password</label>
+        <input type="password" name="pass" ngModel required pattern="\d{3}" #passRef="ngModel"/>
+        <div *ngIf="passRef.errors && (passRef.dirty || passRef.touched)">
+            <span [hidden]="!passRef.errors.required" style="color:red;">
+                        Password is required
+            </span>
+            <span [hidden]="!passRef.errors.pattern" style="color:red">
+                    It must contains 3 digits 
+            </span>
+    </div>
+        <br/>
+        <input type="submit" value="submit" [disabled]="loginRef.invalid"/>
+        <input type="reset" value="reset"/>
+    </form>
+    {{msg}}
+</div>

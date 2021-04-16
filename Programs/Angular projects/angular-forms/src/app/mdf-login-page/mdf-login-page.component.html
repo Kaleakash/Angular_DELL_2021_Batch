@@ -1,0 +1,10 @@
+<div>
+    <form [formGroup]="loginRef">
+        <label>UserName</label>
+        <input type="text" formControlName="user"/><br/>
+        <label>Password</label>
+        <input type="password" formControlName="pass"/><br/>
+        <input type="button" value="store data" (click)="checkUser()"/>
+    </form>
+    {{msg}}
+</div>
