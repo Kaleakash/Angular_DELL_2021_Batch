@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="emp">
+        <label>Id</label>
+        <input type="text" formControlName="id"/><br/>
+        <label>Name</label>
+        <input type="text" formControlName="name"/><br/>
+        <label>Salary</label>
+        <input type="text" formControlName="salary"/><br/>
+        <label>Gender</label>
+        <input type="radio" value="male" formControlName="gender">male
+        <input type="radio" value="female" formControlName="gender">female<br/>
+        <input type="button" value="store employee record" (click)="storeEmpData()"/>
+    </form>
+</div>
