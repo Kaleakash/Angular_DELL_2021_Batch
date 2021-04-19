@@ -12,4 +12,10 @@ export class EmployeeService {
     subscribe(data=>console.log(data),error=>console.log(error),
     ()=>console.log("completed"))
     }
+
+    deleteEmployeeDetails(id:number){
+        this.httpClient.delete("http://localhost:3000/employees/"+id).
+        subscribe(result=>console.log(result),error=>console.log(error.statusText),
+        ()=>console.log("completed"));
+    }
 }

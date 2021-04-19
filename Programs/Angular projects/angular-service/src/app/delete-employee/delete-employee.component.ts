@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../service.employee';
 
 @Component({
   selector: 'app-delete-employee',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteEmployeeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public empService:EmployeeService) { }
 
   ngOnInit(): void {
   }
-
+  deleteRec(id:any){
+    console.log("id is "+id)
+    this.empService.deleteEmployeeDetails(id);
+  }
 }
