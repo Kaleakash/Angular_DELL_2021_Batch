@@ -1,1 +1,11 @@
-<p>attribute-directive works!</p>
+<div>
+    <h2>Attribute directive tag</h2>
+    <p style="color:red;">Apply CSS effect with inline CSS</p>
+    <p [ngStyle]="{'color':'red'}">Angular ngStyle attribute</p>
+    <p [ngStyle]="styleVarilabe">Angular ngStyle attribute using variable</p>
+    <p class="abc">Apply CSS Effect using CSS class selector</p>
+    <p [ngClass]=" 'abc' ">Apply CSS Effect using ngClass attribute</p>
+    <p [ngClass]=" {abc:f1,xyz:f2} ">Apply CSS Effect using ngClass attribute with event</p>
+    <br/>
+    <input type="button" value="apply CSS Effect" (click)="applyEffect()"/>
+</div>
