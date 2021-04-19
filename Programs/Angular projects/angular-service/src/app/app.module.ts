@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { FakeService } from './service.fake';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { SecondComponent } from './second/second.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [FakeService],   // all service details. 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
