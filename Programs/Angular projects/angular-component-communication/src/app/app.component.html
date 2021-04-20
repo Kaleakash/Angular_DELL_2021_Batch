@@ -4,6 +4,10 @@
   <input type="text" #nameRef/><br/>
   <input type="button" value="send name" (click)="passName(nameRef.value)"/>
   Parent Name is {{parentName}}, Child age is in parent component {{cAge}}
+  <br/>
+  <input type="button" value="call child2"
+  (click)="callChild2()"/>
+  Child Designation is {{childDesg}}<br/>
   <hr/>
   <app-child1 [pName]="parentName" (eventRef)="cAge=$event"></app-child1>
   <hr/>
