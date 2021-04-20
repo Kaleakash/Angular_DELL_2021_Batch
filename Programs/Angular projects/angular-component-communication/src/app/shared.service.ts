@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SharedService {
   names:Array<string>=new Array();
+  
   constructor() { }
 
   setNames(name:string){
