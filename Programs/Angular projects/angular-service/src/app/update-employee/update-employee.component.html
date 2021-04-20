@@ -1,1 +1,9 @@
-<p>update-employee works!</p>
+<div>
+    <form #empRef="ngForm" (ngSubmit)="updateEmp(empRef.value)">
+        <label>Id</label>
+        <input type="text" name="id" ngModel><br/>
+        <label>Salary</label>
+        <input type="text" name="salary" ngModel><br/>
+        <input type="submit" value="submit"/>
+    </form>
+</div>

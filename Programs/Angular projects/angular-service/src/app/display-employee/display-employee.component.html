@@ -1,1 +1,17 @@
-<p>display-employee works!</p>
+<div>
+    <input type="button" value="load the data" (click)="loadData()"/><br/>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Gender</th>
+        </tr>
+        <tr *ngFor="let emp of employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.gender}}</td>
+        </tr>
+    </table>
+</div>

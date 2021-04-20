@@ -1,4 +1,7 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../model.employee';
+import { EmployeeService } from '../service.employee';
 
 @Component({
   selector: 'app-display-employee',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayEmployeeComponent implements OnInit {
 
-  constructor() { }
+  employees?:Array<Employee>;
+  errMsg?:string;
+  constructor(public empSer:EmployeeService) { }
 
   ngOnInit(): void {
+  }
+
+  loadData(){
+    this.empSer.retrieveEmployee().subscribe(result=>this.employees=result,err=>this.errMsg=err);
   }
 
 }

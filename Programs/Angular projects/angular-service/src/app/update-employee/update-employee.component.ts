@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../service.employee';
 
 @Component({
   selector: 'app-update-employee',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateEmployeeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public empSer:EmployeeService) { }
 
   ngOnInit(): void {
   }
-
+  updateEmp(empRef:any){
+    this.empSer.updateEmployee(empRef);
+  }
 }
