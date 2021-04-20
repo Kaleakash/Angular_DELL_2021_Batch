@@ -3,9 +3,9 @@
   <h4>Parent Component</h4>
   <input type="text" #nameRef/><br/>
   <input type="button" value="send name" (click)="passName(nameRef.value)"/>
-  Parent Name is {{parentName}}
+  Parent Name is {{parentName}}, Child age is in parent component {{cAge}}
   <hr/>
-  <app-child1 [pName]="parentName"></app-child1>
+  <app-child1 [pName]="parentName" (eventRef)="cAge=$event"></app-child1>
   <hr/>
   <app-child2></app-child2>
   <hr/>

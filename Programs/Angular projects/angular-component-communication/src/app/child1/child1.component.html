@@ -1,4 +1,6 @@
 <div>
     <h2>Child1 component</h2>
-    Parent Name is {{pName}}
+    Parent Name is {{pName}}, Child age is {{childAge}}<br/>
+    Age is <input type="text" #ageRef/>
+    <input type="button" value="Age Details " (click)="changeAge(ageRef.value)"/>
 </div>
