@@ -1,6 +1,6 @@
 <div>
   <h2>Angular component communication</h2>
-  <h4>Parent Component</h4>
+  <!--<h4>Parent Component</h4>
   <input type="text" #nameRef/><br/>
   <input type="button" value="send name" (click)="passName(nameRef.value)"/>
   Parent Name is {{parentName}}, Child age is in parent component {{cAge}}
@@ -14,5 +14,11 @@
   <app-child1 [pName]="parentName" (eventRef)="cAge=$event"></app-child1>
   <hr/>
   <app-child2 [productDetails]="productNames"></app-child2>
+  <hr/>
+  -->
+  <hr/>
+  <app-child3></app-child3>
+  <hr/>
+  <app-child4></app-child4>
   <hr/>
 </div>

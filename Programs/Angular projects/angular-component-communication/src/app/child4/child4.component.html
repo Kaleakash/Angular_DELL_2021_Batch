@@ -1,0 +1,9 @@
+<div>
+    <input type="button" value="get name " (click)="getValue()"/><br/>
+    Name is {{name}}
+    <br/>
+    <h4>All Names are </h4>
+    <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+    </ul>
+</div>
