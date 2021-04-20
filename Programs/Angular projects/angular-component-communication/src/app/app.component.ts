@@ -13,15 +13,19 @@ childDesg?:string;
  @ViewChild(Child2Component)
  child2?:Child2Component;       //DI for child2 
 
+ productNames:Array<string>=new Array();
  passName(parentName:string){
    this.parentName= parentName;
  }
  constructor(){
    
  }
-
  callChild2() {
   this.child2?.dis();
   this.childDesg=this.child2?.desg;
+ }
+
+ addProduct(pname:string){
+    this.productNames.push(pname);
  }
 }
