@@ -1,3 +1,11 @@
 <div>
   <h2>Angular life cycle methods</h2>
+  Name is {{name}} and skillSet is {{skillSet}}
+  <br/>
+  <input type="button" value="change value"
+  (click)="changeValue()"/>
+  <hr/>
+  <div *ngIf="f1">
+  <app-child1 [parentSkillSet]="skillSet"></app-child1>
+</div>
 </div>
