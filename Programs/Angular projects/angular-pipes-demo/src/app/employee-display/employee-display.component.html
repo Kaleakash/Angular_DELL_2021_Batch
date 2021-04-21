@@ -9,7 +9,7 @@
         </tr>
         <tr *ngFor="let emp of employees">
             <td>{{emp.id }}</td>
-            <td>{{emp.name | GenderPipe : emp.gender | uppercase}}</td>
+            <td>{{emp.name | GenderPipe : emp.gender : 'Hello' }}</td>
             <td>{{emp.salary | currency:'Rs.'}}</td>
             <td>{{emp.gender }}</td>
             <td>{{dd | date :'short'}}</td>
