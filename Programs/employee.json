@@ -17,6 +17,48 @@
       "name": "Ajay",
       "salary": "26000",
       "gender": "male"
+    },
+ {
+      "id": 106,
+      "name": "Veeta",
+      "salary": 20000,
+      "gender": "female"
+    },
+ {
+      "id": 107,
+      "name": "Leeta",
+      "salary": 18000,
+      "gender": "female"
+    },
+ {
+      "id": 108,
+      "name": "Mahesh",
+      "salary": 25000,
+      "gender": "male"
+    },
+ {
+      "id": 109,
+      "name": "Govind",
+      "salary": 28000,
+      "gender": "male"
+    },
+ {
+      "id": 110,
+      "name": "Balaji",
+      "salary": 12000,
+      "gender": "male"
+    },
+ {
+      "id": 111,
+      "name": "Shilpa",
+      "salary": 28000,
+      "gender": "female"
+    },
+ {
+      "id": 112,
+      "name": "Leeta",
+      "salary": 29000,
+      "gender": "female"
     }
   ]
 }
