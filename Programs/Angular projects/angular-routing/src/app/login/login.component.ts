@@ -18,7 +18,8 @@ export class LoginComponent implements OnInit {
       console.log("Successfully Login!")
       //sessionId or JWT sessionStorage.setItem("key",value)
       sessionStorage.setItem("obj","Ravi"); // value may be unique retrieve from backend 
-      this.router.navigate(["success"])
+      this.router.navigate(["success","Ravi"])  // append the name through path as path param 
+      
     }else {
       console.log("Failure try once again")
       this.errorMsg="Failure try once again"

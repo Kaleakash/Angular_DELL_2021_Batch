@@ -1,8 +1,13 @@
 <div>
+    <a routerLink="sub1">Sub1 Module</a>
+    <a routerLink="sub2">Sub2 Module</a>
+    <a routerLink="sub3">Sub3 Module</a>
+    <br/>
     <h1>Welcome to Home Page</h1>
+    <p>Welcome user {{user}}</p>
 
-
-
+    <hr/>
+    <router-outlet></router-outlet>
 
     <input type="button" value="logout"
     (click)="logout()"/>

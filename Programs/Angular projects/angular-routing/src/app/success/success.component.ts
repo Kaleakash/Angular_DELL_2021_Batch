@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-success',
@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./success.component.css']
 })
 export class SuccessComponent implements OnInit {
-
-  constructor(public router:Router) { }
+user?:string;
+  constructor(public router:Router,public activateRouter:ActivatedRoute) { }
 
   ngOnInit(): void {
+  this.activateRouter.params.subscribe(data=>this.user=data.userName);
   }
   logout() {
     sessionStorage.removeItem("obj");

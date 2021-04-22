@@ -9,6 +9,10 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
 import { AuthGaurd } from './auth.gaurd';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
+import { Sub3Component } from './sub3/sub3.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { AuthGaurd } from './auth.gaurd';
     AboutusComponent,
     ContactusComponent,
     LoginComponent,
-    SuccessComponent
+    SuccessComponent,
+    DashboardComponent,
+    Sub1Component,
+    Sub2Component,
+    Sub3Component
   ],
   imports: [
     BrowserModule,
