@@ -1,5 +1,5 @@
-<div>
-    <table border="1">
+<div class="container">
+    <table border="1" class="table">
         <tr>
             <th>Id</th>
             <th (click)="sortByName()">Name</th>
@@ -9,7 +9,7 @@
         </tr>
         <tr *ngFor="let emp of employees">
             <td>{{emp.id }}</td>
-            <td>{{emp.name | GenderPipe : emp.gender : 'Hello' }}</td>
+            <td>{{emp.name | GenderPipe : emp.gender}}</td>
             <td>{{emp.salary | currency:'Rs.'}}</td>
             <td>{{emp.gender }}</td>
             <td>{{dd | date :'short'}}</td>

@@ -1,0 +1,11 @@
+      /*  * {color: tan;}   */
+      /*  p{color: teal;}
+        div{color: violet;} */
+        p.firstClass{color: tomato;font-size: 20px;}
+        p.secondClass{color:yellow;font-size: 30px;}
+        .globalClass{color: blue;font-size: 40px;}
+
+
+  div{
+    border: solid 2px red;
+  }
