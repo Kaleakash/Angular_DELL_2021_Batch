@@ -8,6 +8,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
+import { AuthGaurd } from './auth.gaurd';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { SuccessComponent } from './success/success.component';
     BrowserModule,
     AppRoutingModule,FormsModule
   ],
-  providers: [],
+  providers: [AuthGaurd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

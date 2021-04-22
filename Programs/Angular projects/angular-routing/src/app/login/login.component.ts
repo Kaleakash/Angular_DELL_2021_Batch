@@ -16,6 +16,8 @@ export class LoginComponent implements OnInit {
   checkUser(loginRef:any){
     if(loginRef.user=="Ravi" && loginRef.pass=="123"){
       console.log("Successfully Login!")
+      //sessionId or JWT sessionStorage.setItem("key",value)
+      sessionStorage.setItem("obj","Ravi"); // value may be unique retrieve from backend 
       this.router.navigate(["success"])
     }else {
       console.log("Failure try once again")
